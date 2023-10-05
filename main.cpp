@@ -1,42 +1,41 @@
 //author: Bogushevich D. VMK-22
-#include <iostream>
-#include <cmath> // вставляем код с математическими функциями
-#include <stdlib.h> //вставляем код для случайных чисел
-#include <time.h>
 
+#include "massive.h"
+#include <time.h>
 
 using namespace std;
 
 //главная функция
 int main(){
 
+int* mas;
+int* example;
 int min = 0; //минимальное значение в случайных чисел
 int max = 100; // максимальное значение случайных чисел
-int sum_mas = 0; //сумма элементов массива
+int sum_arr = 0; //сумма элементов массива
 int n; // размерность массива
 
-srand(time(NULL)); //использования времени для получения при каждом запуске новых значений
+srand(time(NULL)); //случайные числа
 
 cout << "Input size mass = "; //Вывод сообщению пользователю что нужно ввести размер массива
 
 cin >> n; //получения размера массива
 
-int *a = new int [n]; //выделение памяти для массива размерностью n
+mas = fill_mas(n,max,min); // заполнение массива mas
 
-for (unsigned i = 0; i < n; i++) //цикл заполнения массива
+Output_mas(mas,n); // вывода массива  mas
 
-	a[i] = min + rand() % ( max + min + 1) ; //специальная формула
+sum_arr = sum_mas(mas,n); // получение суммы всех элементов массива
 
-for (unsigned i = 0; i < n; i++) //цикл вывода массива
+Input_mass_file(mas,n,"test2.txt");// ввывод массива в файл
 
-	cout << "a[" << i <<"]" << " = " << a[i] << endl;
+cout << "Summa massive = " << sum_arr << endl; //вывод пользователю ответа
 
+cout << endl; // отделение строки
 
-for (unsigned i = 0; i < n; i++)// цикл получения суммы элементов массива в квадрате
+example = Create_mass_file("text.txt"); // создание массива из файла
 
-	sum_mas = pow(a[i],2) + sum_mas;
-
-cout << "Summa massive = " << sum_mas << endl; //вывод пользователю ответа
+Output_mas(example,12);
 
 
 }
