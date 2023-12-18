@@ -1,0 +1,9 @@
+﻿  main.cpp
+C:\Users\mrrac\OneDrive\Рабочий стол\OOP\zad_2(arrays)\oop_2(vs)\main.cpp(40,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\mrrac\OneDrive\Рабочий стол\OOP\zad_2(arrays)\oop_2(vs)\main.cpp(37,9): warning C4101: m: неиспользованная локальная переменная
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "int * __cdecl WwithT::fill_masT<int>(int,int,int)" (??$fill_masT@H@WwithT@@YAPEAHHHH@Z) в функции main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl WwithT::Output_masT<int>(int const *,int)" (??$Output_masT@H@WwithT@@YAXPEBHH@Z) в функции main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl WwithT::sum_masT<int>(int *,int)" (??$sum_masT@H@WwithT@@YAHPEAHH@Z) в функции main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl WwithT::Input_mass_fileT<int>(int *,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??$Input_mass_fileT@H@WwithT@@YAXPEAHHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) в функции main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "int * __cdecl WwithT::Create_mass_fileT<int>(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (??$Create_mass_fileT@H@WwithT@@YAPEAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z) в функции main.
+C:\Users\mrrac\OneDrive\Рабочий стол\OOP\zad_2(arrays)\oop_2(vs)\x64\Debug\arrays.exe : fatal error LNK1120: неразрешенных внешних элементов: 5
